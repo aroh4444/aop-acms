@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@color/bg" 
+  android:orientation="vertical"
+  >
+  
+  	
+	<!-- 这里是title栏 -->
+	
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="45dp" 
+		android:orientation="horizontal" 
+		android:background="@drawable/title_bg" 
+		android:gravity="center"
+		>
+		
+		<ImageView
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:src="@drawable/police" 
+			android:paddingTop="4dp"
+			android:maxWidth="38dp" 
+			android:maxHeight="38dp"
+			/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="人口信息列表" 
+			android:textSize="16sp" 
+			/>
+			
+	</LinearLayout>
+	
+	<ListView
+		android:id="@android:id/list" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		/>
+	
+	<!-- 这里是title栏 -->
+	<RelativeLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical" 
+	android:gravity="bottom"
+	>	
+	
+		<RelativeLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="45dp" 		
+			android:orientation="horizontal" 
+			android:background="@drawable/bar_bg" 
+			android:layout_gravity="bottom" 
+			android:gravity="center_vertical" 
+			android:paddingTop="2dp"
+			>
+
+			<LinearLayout
+				android:id="@+id/person_back"
+				android:layout_width="40dp" 
+				android:layout_height="fill_parent" 
+				android:background="@drawable/menu_bg"
+				android:orientation="vertical" 
+				android:layout_marginLeft="10dp" 
+				android:clickable="true" 
+				android:onClick="onClick"
+				>
+				<ImageView 
+					android:layout_width="25dp" 
+					android:layout_height="20dp" 
+					android:src="@drawable/menu_return" 
+					android:layout_gravity="center_horizontal"
+					/>
+				<TextView
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal" 
+					android:text="返回"
+					/>
+			</LinearLayout>
+			
+			
+				
+		</RelativeLayout>
+	
+	</RelativeLayout> 		
+		
+</LinearLayout>

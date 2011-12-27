@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mobile.police"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/police" android:label="@string/app_name" android:name="cn.creable.gridgis.controls.App">
+        <activity android:name=".MainActivity"
+                  android:label="@string/app_name" 
+                  android:finishOnTaskLaunch="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".SearchList" android:label="@string/app_name"
+        		  android:theme="@android:style/Theme.Dialog" />
+        		  
+        <activity android:name=".HelpList" android:label="@string/app_name"
+        		  android:theme="@android:style/Theme.Dialog" />
+        		  
+        <activity android:name=".SetupList" android:label="@string/app_name"
+		  		  android:theme="@android:style/Theme.Dialog" />
+		  		  
+        <activity android:name=".OtherSearchList" android:label="@string/app_name"
+		  		  android:theme="@android:style/Theme.Dialog" /> 
+		  		  
+		<activity android:name=".person.PersonList" />
+		
+		<activity android:name=".legalcase.CaseSearch" />
+		
+		<activity android:name=".legalcase.CaseList" />
+		
+		<activity android:name=".legalcase.SelectList" android:theme="@android:style/Theme.Dialog" />
+		
+		<activity android:name=".suspect.SuspectList" />
+		
+		<activity android:name=".victim.VictimList" />
+		
+		<activity android:name=".unit.UnitList" />
+		
+		<activity android:name=".fugitive.FugitiveSearch" />
+		
+		<activity android:name=".fugitive.FugitiveList" /> 
+		
+		<activity android:name=".suspect.SuspectInfo" android:theme="@style/Theme.Dialog" />
+		
+		<activity android:name=".person.PersonInfo" android:theme="@style/Theme.Dialog"/>
+		
+		<activity android:name=".legalcase.CaseInfo" android:theme="@style/Theme.Dialog" />
+		
+		<activity android:name=".victim.VictimInfo" android:theme="@style/Theme.Dialog" />
+		
+		<activity android:name=".unit.UnitInfo" android:theme="@style/Theme.Dialog" /> 
+		
+		<activity android:name=".setup.IpSetup" android:theme="@style/Theme.Dialog" />
+		  		  
+        <activity android:name=".person.PersonSearch" android:label="@string/app_name"/>
+        
+        <activity android:name=".map.MapActivity" />	
+        
+        <provider android:name=".provider.ProvinceProvider" android:authorities="com.mobile.police.provider.Provinces" />	  		  		  		           		  
+
+		<provider android:name=".provider.CityProvider" android:authorities="com.mobile.police.provider.Cities" />	
+		
+		<provider android:name=".provider.WorkProvider" android:authorities="com.mobile.police.provider.Works" />
+		
+		<provider android:name=".provider.IpProvider" android:authorities = "com.mobile.police.provider.Ips" /> 		  		  		           		 
+    </application>
+
+    <uses-sdk android:minSdkVersion="5" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>    
+
+</manifest> 

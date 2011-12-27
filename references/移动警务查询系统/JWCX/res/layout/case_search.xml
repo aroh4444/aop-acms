@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@color/bg" 
+  android:orientation="vertical"
+  >
+  
+  	
+	<!-- 这里是title栏 -->
+	
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="45dp" 
+		android:orientation="horizontal" 
+		android:background="@drawable/title_bg" 
+		android:gravity="center"
+		>
+		
+		<ImageView
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:src="@drawable/police" 
+			android:paddingTop="4dp"
+			android:maxWidth="38dp" 
+			android:maxHeight="38dp"
+			/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="案件信息查询" 
+			android:textSize="16sp" 
+			/>
+			
+	</LinearLayout>
+	
+	<TableLayout
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:paddingTop="20dp" 
+		android:paddingLeft="20dp" 
+		android:paddingRight="20dp" 
+		android:paddingBottom="20dp"
+		>
+		
+		<TableRow
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10dp" 
+			>
+			<TextView 
+				style="@style/m_textviewstyle"
+				android:text="案件类别：" 
+				/>
+			
+			<Spinner
+				android:id="@+id/case_category" 
+				android:layout_width="wrap_content" 
+				android:layout_height="35px" 
+				android:layout_weight="0.6" 
+				android:prompt="@string/prompt_case_category" 
+				/>
+		</TableRow>
+		
+		<TableRow
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10dp" 
+			>
+			<TextView 
+				style="@style/m_textviewstyle"
+				android:text="发案时间从：" 
+				/>
+				
+			<EditText
+				android:id="@+id/case_timeBegin"
+				style="@style/m_fontstyle" 
+				android:layout_weight="0.6" 
+				android:editable="false" 
+				android:onClick="onClick" 
+				android:hint="请单击"
+				/>
+
+		</TableRow>	
+		
+		<TableRow
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10dp" 
+			>
+			<TextView 
+				style="@style/m_textviewstyle"
+				android:text="发案时间到：" 
+				/>
+				
+			<EditText
+				android:id="@+id/case_timeEnd"
+				style="@style/m_fontstyle" 
+				android:layout_weight="0.6" 
+				android:editable="false" 
+				android:onClick="onClick" 
+				android:hint="请单击"
+				/>			
+
+		</TableRow>	
+		
+		<TableRow
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10dp" 
+			>
+			<TextView 
+				style="@style/m_textviewstyle"
+				android:text="作案时机：" 
+				/>
+				
+			<Spinner
+				android:id="@+id/case_timing" 
+				android:layout_width="wrap_content" 
+				android:layout_height="35px" 
+				android:layout_weight="0.6" 
+				android:prompt="@string/prompt_case_timing"				
+				/>
+		</TableRow>	
+		
+		<TableRow
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10dp" 
+			>
+			<TextView 
+				style="@style/m_textviewstyle"
+				android:text="作案处所：" 
+				/>
+			<Spinner 
+				android:id="@+id/case_site"
+				android:layout_width="wrap_content" 
+				android:layout_height="35px" 
+				android:prompt="@string/prompt_case_site"
+				android:layout_weight="0.6" 
+				/>
+		</TableRow>	
+		
+		<TableRow
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10dp" 
+			>
+			<TextView 
+				style="@style/m_textviewstyle"
+				android:text="作案对象：" 
+				/>
+			<Spinner 
+				android:id="@+id/case_target"
+				android:layout_width="wrap_content" 
+				android:layout_height="35px" 
+				android:prompt="@string/prompt_case_target"
+				android:layout_weight="0.6" 
+				/>
+		</TableRow>
+		
+		<TableRow
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10dp" 
+			>
+			<TextView 
+				style="@style/m_textviewstyle"
+				android:text="作案手段：" 
+				/>
+			<Spinner 
+				android:id="@+id/case_method"
+				android:layout_width="wrap_content" 
+				android:layout_height="35px" 
+				android:prompt="@string/prompt_case_method"
+				android:layout_weight="0.6" 
+				/>
+		</TableRow>												
+		
+		
+	</TableLayout>
+	
+	<!-- 这里是title栏 -->
+	<RelativeLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical" 
+	android:gravity="bottom"
+	>	
+	
+		<RelativeLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="45dp" 		
+			android:orientation="horizontal" 
+			android:background="@drawable/bar_bg" 
+			android:layout_gravity="bottom" 
+			android:gravity="center_vertical" 
+			android:paddingTop="2dp"
+			>
+
+			<LinearLayout
+				android:id="@+id/case_back"
+				android:layout_width="40dp" 
+				android:layout_height="fill_parent" 
+				android:background="@drawable/menu_bg"
+				android:orientation="vertical" 
+				android:layout_marginLeft="10dp" 
+				android:clickable="true" 
+				android:onClick="onClick"
+				>
+				<ImageView 
+					android:layout_width="25dp" 
+					android:layout_height="20dp" 
+					android:src="@drawable/menu_return" 
+					android:layout_gravity="center_horizontal"
+					/>
+				<TextView
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal" 
+					android:text="返回"
+					/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:id="@+id/case_search"
+				android:layout_width="40dp" 
+				android:layout_height="fill_parent" 
+				android:background="@drawable/menu_bg"
+				android:orientation="vertical" 
+				android:layout_alignParentRight="true" 
+				android:layout_marginRight="10dp" 
+				android:clickable="true" 
+				android:onClick="onClick"				
+				>
+				<ImageView 
+					android:layout_width="fill_parent" 
+					android:layout_height="20dp"  
+					android:src="@drawable/menu_search" 
+					android:layout_gravity="center_horizontal"
+					/>
+				<TextView
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal" 
+					android:text="查询"
+					/>
+			</LinearLayout>			
+				
+		</RelativeLayout>
+	
+	</RelativeLayout> 		
+		
+</LinearLayout>

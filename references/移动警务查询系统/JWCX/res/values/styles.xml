@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="m_fontstyle">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">35px</item>
+		<item name="android:textSize">12sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:singleLine">true</item>
+	</style>
+	
+	<style name="m_textviewstyle">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">0.4</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:layout_gravity">center_vertical</item>
+	</style>
+	
+	<style name="m_textviewstyle_r">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">0.6</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:layout_gravity">center_vertical</item>
+	</style>	
+	
+	<style name="Theme.Dialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowBackground">@drawable/shape_dialog</item>
+	</style>
+	
+	<!-- 这里引入PopupWindow进入退出时的动画效果 -->
+	<style name="PopupAnim" parent="android:Animation">
+		<item name="android:windowEnterAnimation">@anim/popenter</item>
+		<item name="android:windowExitAnimation">@anim/popexit</item>
+	</style>
+		
+</resources>

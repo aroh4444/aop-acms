@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+/* CSS Document */
+.tailFont {
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.headFont {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	background-repeat: no-repeat;
+	width: 263px;
+	height: 32px;
+}
+
+.headFontSw {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	background-repeat: no-repeat;
+	width: 480px;
+	height: 32px;
+}
+
+.titleName {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+	width: 180px;
+	margin-top: 8px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.titlePhone {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+	color: #FFFFFF;
+	margin-top: -15px;
+	text-align: center;
+	width: 180px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.titleTd {
+	width: 200px;
+	height: 66px;
+	background-repeat: no-repeat;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.cookName {
+	font-size: 16px;
+	color: #990000;
+	text-align: left;
+	padding-left:20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100px;
+}
+
+.cookPrice {
+	color: #FF0033;
+	text-align: right;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 30px;
+}
+
+.shopInfoTitle {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	color: #993333;
+}
+
+.shopInfoIntro {
+	font-size: 16px;
+	text-align: left;
+}
+
+.shopInfo {
+	font-size: 16px;
+	text-align: left;
+}
+
+.loginInfo {
+	font-size: 16px;
+	text-align: center;
+}
+
+.cookPrice {
+	font-size: 16px;
+	text-align: center;
+	color:  #FF0033;
+	width: 120px；
+}
+
+.mTextInPut {
+	font-size: 16px;
+}
+
+.mTextInPutLogin {
+	font-size: 16px;
+	width: 300px;
+}
+
+.contents a {
+	text-decoration: none;
+	color: #993333;
+}
+
+.contents a:hover {
+	color: #f60;
+}
+
+.alink a {
+	color: #993333;
+}
+
+.alink a:hover {
+	color: #f60;
+}
+
+.timeInfo{
+	color: #993333;
+	font-size: 14px;
+}
+
+.swcooksFont{
+font-size: 16px;
+}
+
+.phototable {
+	width: 230px;
+	height: 230px;
+	border: 0px;
+}
+.indexImage{
+	width: 200px;
+	height: 200px;
+	margin-left: 15px;
+	border-color: #f60;
+	border: 1px;
+	border-style: dotted;
+}

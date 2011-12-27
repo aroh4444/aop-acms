@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">移动警务查询</string>
+    
+    <string name="prompt_sex">选择性别</string>
+    <string name="prompt_province">选择省份</string>
+    <string name="prompt_city">选择城市</string>
+    <string name="prompt_work">选择工作</string>
+    <string name="prompt_case_category">选择案件类别</string>
+    <string name="prompt_case_timing">选择时机</string>
+    <string name="prompt_case_site">选择处所</string>
+    <string name="prompt_case_target">选择对象</string>
+    <string name="prompt_case_method">选择手段</string>
+    
+    <string name="prompt_fug_voice">选择口音</string>
+    <string name="prompt_fug_face">选择脸型</string>
+    <string name="prompt_fug_shape">选择体型</string>
+</resources>

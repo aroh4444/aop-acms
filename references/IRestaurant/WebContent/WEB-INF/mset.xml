@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mset>
+	<passW>ok</passW>
+	<mLog>off</mLog>
+	<logFile>C:\irestaurant.txt</logFile>
+	<urlRoot>http://192.168.1.210:8080/IRestaurant</urlRoot>
+</mset>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="case_category">
+		<item>请选择</item>
+		<item>危害国家安全案</item>
+		<item>叛变、叛逃案</item>
+		<item>间谍案</item>
+		<item>失火案</item>
+		<item>投毒案</item>
+		<item>爆炸案</item>	
+	</string-array>
+	
+	<string-array name="case_timing">
+		<item>请选择</item>
+		<item>天气</item>
+		<item>雨天</item>
+		<item>雪天</item>
+		<item>晴天</item>
+		<item>风天</item>
+		<item>阴天</item>
+	</string-array>
+	
+	<string-array name="case_site">
+		<item>请选择</item>
+		<item>繁华地段</item>
+		<item>贸易市场</item>
+		<item>公路</item>
+		<item>高速公路</item>
+		<item>乡村公路</item>
+		<item>建筑工地</item>
+	</string-array>
+	
+	<string-array name="case_target">
+		<item>请选择</item>
+		<item>中年男子</item>
+		<item>中年妇女</item>
+		<item>男青年</item>
+		<item>女青年</item>
+		<item>老年男子</item>
+		<item>老年妇女</item>
+		<item>少男</item>
+		<item>少女</item>
+	</string-array>
+	
+	<string-array name="case_method">
+		<item>请选择</item>
+		<item>预备手段</item>
+		<item>制造条件</item>
+		<item>事先潜伏</item>
+		<item>配制钥匙</item>
+		<item>密谋策划</item>
+		<item>物色对象</item>
+		<item>寻找同伙</item>
+	</string-array>
+	
+	<string-array name="fug_category">
+		<item>请选择</item>
+		<item>监视居住在逃</item>
+		<item>取保候审在逃</item>
+		<item>刑拘在逃</item>
+		<item>逮捕在逃</item>
+		<item>负案在逃</item>
+		<item>服刑在逃</item>
+		<item>劳教在逃</item>
+	</string-array>
+	
+	<string-array name="fug_voice">
+		<item>请选择</item>
+		<item>北京口音</item>
+		<item>天津口音</item>
+		<item>河北口音</item>
+		<item>安徽口音</item>
+		<item>浙江口音</item>
+		<item>江苏口音</item>
+		<item>上海口音</item>
+	</string-array>
+	
+	<string-array name="fug_face">
+		<item>请选择</item>
+		<item>椭圆脸</item>
+		<item>圆脸</item>
+		<item>长方脸</item>
+		<item>方脸</item>
+		<item>倒大脸</item>
+		<item>三角脸	</item>
+		<item>狭长脸</item>
+		<item>菱形脸</item>
+	</string-array>
+	
+	<string-array name="fug_shape">
+		<item>请选择</item>
+		<item>特胖</item>
+		<item>中等</item>
+		<item>特瘦</item>
+		<item>阔胸</item>
+		<item>黑肤</item>
+		<item>麻子</item>
+		<item>白肤</item>
+	</string-array>
+	
+	
+</resources>

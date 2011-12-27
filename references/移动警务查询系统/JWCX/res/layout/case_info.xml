@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="280dp"
+  android:layout_height="300dp" 
+  android:orientation="vertical">
+  
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="40dp" 
+		android:orientation="horizontal" 
+		android:background="@drawable/title_bg" 
+		android:gravity="center"
+		>
+		
+		<ImageView
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:src="@drawable/police" 
+			android:paddingTop="4dp"
+			android:maxWidth="38dp" 
+			android:maxHeight="38dp"
+			/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="案件详细信息" 
+			android:textSize="16sp" 
+			/>
+			
+	</LinearLayout>   	
+    
+  
+    <ScrollView
+  	android:layout_width="fill_parent" 
+  	android:layout_height="230dp" 
+  	>
+	  <TableLayout
+	  	 android:layout_width="fill_parent" 
+	  	 android:layout_height="wrap_content" 
+	  	 android:padding="20dp" 
+	  	 >
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="案件编码：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_code"
+	     		/>
+	     </TableRow>
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="案件类别：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_category"
+	     		/>
+	     </TableRow>
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="案情来源：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_source"
+	     		/>
+	     </TableRow> 
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="发案地点：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_addr"
+	     		/>
+	     </TableRow> 
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="简要案情：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_brief" 
+	     		android:singleLine="false" 
+	     		/>
+	     </TableRow>                
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="报案时间：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_report"
+	     		/>
+	     </TableRow>          	 
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="发现时间：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_find"
+	     		/>
+	     </TableRow> 
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="发案时间：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_event"
+	     		/>
+	     </TableRow>
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="作案人数：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_crime"
+	     		/>
+	     </TableRow>  
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="受伤人数：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_injured"
+	     		/>
+	     </TableRow>
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="死亡人数：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_death"
+	     		/>
+	     </TableRow> 
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="损失价值：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_loss"
+	     		/>
+	     </TableRow> 
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="作案痕迹：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_trace"
+	     		/>
+	     </TableRow>
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="现场物证：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_evidence"
+	     		/>
+	     </TableRow>
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="现场特征：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_feature"
+	     		/>
+	     </TableRow> 
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="选择时机：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_timing"
+	     		/>
+	     </TableRow>
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="选择处所：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_site"
+	     		/>
+	     </TableRow> 
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="选择对象：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_target"
+	     		/>
+	     </TableRow> 
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="作案手段：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_method"
+	     		/>
+	     </TableRow> 
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="作案特点：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_characters"
+	     		/>
+	     </TableRow> 
+	     
+	     <TableRow
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content" 
+	     	>
+	     	<TextView 
+	     		style="@style/m_textviewstyle" 
+	     		android:text="作案工具：" 
+	     		/>
+	     	<TextView
+	     		style="@style/m_textviewstyle_r" 
+	     		android:id="@+id/info_case_tool"
+	     		/>
+	     </TableRow>                                                                    
+	         
+	         
+	  </TableLayout>
+  
+  </ScrollView>
+  
+ 	<RelativeLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical" 
+	android:gravity="bottom"
+	>	
+	
+		<RelativeLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="30dp" 		
+			android:orientation="horizontal" 
+			android:background="@drawable/bar_bg" 
+			android:layout_gravity="bottom" 
+			android:gravity="center_vertical" 
+			android:paddingTop="2dp"
+			>
+											
+		</RelativeLayout>
+	
+	</RelativeLayout>
+  
+</LinearLayout>

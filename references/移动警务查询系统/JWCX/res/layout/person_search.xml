@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@color/bg" 
+  android:orientation="vertical"
+  >
+  
+  	
+	<!-- 这里是title栏 -->
+	
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="45dp" 
+		android:orientation="horizontal" 
+		android:background="@drawable/title_bg" 
+		android:gravity="center"
+		>
+		
+		<ImageView
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:src="@drawable/police" 
+			android:paddingTop="4dp"
+			android:maxWidth="38dp" 
+			android:maxHeight="38dp"
+			/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="人口信息查询" 
+			android:textSize="16sp" 
+			/>
+			
+	</LinearLayout>
+	
+	<TableLayout
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:padding="20dp" 	
+		>
+		
+		<TableRow
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10dp" 
+			>
+			<TextView 
+				style="@style/m_textviewstyle"
+				android:text="姓  名：" 
+				/>
+			<EditText 
+				android:id="@+id/person_name"
+				style="@style/m_fontstyle" 
+				android:layout_weight="0.6" 
+				/>
+		</TableRow>
+		
+		<TableRow
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10dp" 
+			>
+			<TextView 
+				style="@style/m_textviewstyle"
+				android:text="姓  别：" 
+				/>
+			<Spinner 
+				android:id="@+id/person_sex"
+				android:layout_width="wrap_content" 
+				android:layout_height="35px" 
+				android:prompt="@string/prompt_sex"
+				android:layout_weight="0.6" 
+				/>
+		</TableRow>	
+		
+		<TableRow
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10dp" 
+			>
+			<TextView 
+				style="@style/m_textviewstyle"
+				android:text="身份证：" 
+				/>
+			<EditText 
+				android:id="@+id/person_idcard"
+				style="@style/m_fontstyle"
+				android:phoneNumber="true"
+				android:layout_weight="0.6" 
+				/>
+		</TableRow>	
+		
+		<TableRow
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10dp" 
+			>
+			<TextView 
+				style="@style/m_textviewstyle"
+				android:text="年龄段：" 
+				/>
+				
+			<LinearLayout
+				android:layout_width="wrap_content" 
+				android:layout_height="35px" 
+				android:layout_weight="0.6" 
+				>
+				<EditText 
+					android:id="@+id/person_age_begin"
+					style="@style/m_fontstyle"
+					android:layout_weight="0.4" 
+					android:phoneNumber="true"
+					/>
+				<TextView 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:textSize="14sp" 
+					android:layout_gravity="center_vertical" 
+					android:gravity="center_horizontal"
+					android:text="到" 
+					android:layout_weight="0.2"
+					/>				
+				<EditText 
+					android:id="@+id/person_age_end"
+					style="@style/m_fontstyle"
+					android:layout_weight="0.4" 
+					android:phoneNumber="true"
+					/>
+			</LinearLayout>				
+		</TableRow>	
+		
+		<TableRow
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10dp" 
+			>
+			<TextView 
+				style="@style/m_textviewstyle"
+				android:text="省  份：" 
+				/>
+			<Spinner 
+				android:id="@+id/person_province"
+				android:layout_width="wrap_content" 
+				android:layout_height="35px" 
+				android:prompt="@string/prompt_province"
+				android:layout_weight="0.6" 
+				/>
+		</TableRow>	
+		
+		<TableRow
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10dp" 
+			>
+			<TextView 
+				style="@style/m_textviewstyle"
+				android:text="城  市：" 
+				/>
+			<Spinner 
+				android:id="@+id/person_city"
+				android:layout_width="wrap_content" 
+				android:layout_height="35px" 
+				android:prompt="@string/prompt_city"
+				android:layout_weight="0.6" 
+				/>
+		</TableRow>
+		
+		<TableRow
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10dp" 
+			>
+			<TextView 
+				style="@style/m_textviewstyle"
+				android:text="工  作：" 
+				/>
+			<Spinner 
+				android:id="@+id/person_work"
+				android:layout_width="wrap_content" 
+				android:layout_height="35px" 
+				android:prompt="@string/prompt_work"
+				android:layout_weight="0.6" 
+				/>
+		</TableRow>												
+		
+		
+	</TableLayout>
+	
+	
+	
+	<!-- 这里是title栏 -->
+	<RelativeLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical" 
+	android:gravity="bottom"
+	>	
+	
+		<RelativeLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="45dp" 		
+			android:orientation="horizontal" 
+			android:background="@drawable/bar_bg" 
+			android:layout_gravity="bottom" 
+			android:gravity="center_vertical" 
+			android:paddingTop="2dp"
+			>
+
+			<LinearLayout
+				android:id="@+id/person_back"
+				android:layout_width="40dp" 
+				android:layout_height="fill_parent" 
+				android:background="@drawable/menu_bg"
+				android:orientation="vertical" 
+				android:layout_marginLeft="10dp" 
+				android:clickable="true" 
+				android:onClick="onClick"
+				>
+				<ImageView 
+					android:layout_width="25dp" 
+					android:layout_height="20dp" 
+					android:src="@drawable/menu_return" 
+					android:layout_gravity="center_horizontal"
+					/>
+				<TextView
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal" 
+					android:text="返回"
+					/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:id="@+id/person_search"
+				android:layout_width="40dp" 
+				android:layout_height="fill_parent" 
+				android:background="@drawable/menu_bg"
+				android:orientation="vertical" 
+				android:layout_alignParentRight="true" 
+				android:layout_marginRight="10dp" 
+				android:clickable="true" 
+				android:onClick="onClick"				
+				>
+				<ImageView 
+					android:layout_width="fill_parent" 
+					android:layout_height="20dp"  
+					android:src="@drawable/menu_search" 
+					android:layout_gravity="center_horizontal"
+					/>
+				<TextView
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal" 
+					android:text="查询"
+					/>
+			</LinearLayout>			
+				
+		</RelativeLayout>
+	
+	</RelativeLayout> 	
+		
+</LinearLayout>

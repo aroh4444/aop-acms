@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="280dp"
+  android:layout_height="wrap_content" 
+  android:orientation="vertical" 
+  android:gravity="center_vertical|center_horizontal">
+  
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="40dp" 
+		android:orientation="horizontal" 
+		android:background="@drawable/title_bg" 
+		android:gravity="center"
+		>
+		
+		<ImageView
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:src="@drawable/police" 
+			android:paddingTop="4dp"
+			android:maxWidth="38dp" 
+			android:maxHeight="38dp"
+			/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="人口详细信息" 
+			android:textSize="16sp" 
+			/>
+			
+	</LinearLayout>  
+  
+  <ScrollView
+  	android:layout_width="fill_parent" 
+  	android:layout_height="220dp" 
+  	>
+  	
+  	<TableLayout
+  		android:layout_width="fill_parent" 
+  		android:layout_height="wrap_content" 
+  		android:padding="20dp"
+  		>
+  		
+  		<TableRow
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" 
+  			>
+  			<TextView 
+  				style="@style/m_textviewstyle" 
+  				android:text="姓  名：" 
+  				/>
+  			<TextView 
+  				android:id="@+id/info_person_name"
+  				style="@style/m_textviewstyle_r" 
+  				/>
+  		</TableRow>
+  		
+  		<TableRow
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" 
+  			>
+  			<TextView 
+  				style="@style/m_textviewstyle" 
+  				android:text="性  别：" 
+  				/>
+  			<TextView 
+  				android:id="@+id/info_person_sex"
+  				style="@style/m_textviewstyle_r" 
+  				/>
+  		</TableRow>
+  		
+  		<TableRow
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" 
+  			>
+  			<TextView 
+  				style="@style/m_textviewstyle" 
+  				android:text="证  件：" 
+  				/>
+  			<TextView 
+  				android:id="@+id/info_person_idcard"
+  				style="@style/m_textviewstyle_r" 
+  				/>
+  		</TableRow>  		
+  		
+  		<TableRow
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" 
+  			>
+  			<TextView 
+  				style="@style/m_textviewstyle" 
+  				android:text="年  龄：" 
+  				/>
+  			<TextView 
+  				android:id="@+id/info_person_age"
+  				style="@style/m_textviewstyle_r" 
+  				/>
+  		</TableRow>  
+  		
+  		<TableRow
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" 
+  			>
+  			<TextView 
+  				style="@style/m_textviewstyle" 
+  				android:text="民  族：" 
+  				/>
+  			<TextView 
+  				android:id="@+id/info_person_race"
+  				style="@style/m_textviewstyle_r" 
+  				/>
+  		</TableRow>
+  		
+  		<TableRow
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" 
+  			>
+  			<TextView 
+  				style="@style/m_textviewstyle" 
+  				android:text="工  作：" 
+  				/>
+  			<TextView 
+  				android:id="@+id/info_person_work"
+  				style="@style/m_textviewstyle_r" 
+  				/>
+  		</TableRow>  		 
+  		
+  		<TableRow
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" 
+  			>
+  			<TextView 
+  				style="@style/m_textviewstyle" 
+  				android:text="地  区：" 
+  				/>
+  			<TextView 
+  				android:id="@+id/info_person_area"
+  				style="@style/m_textviewstyle_r" 
+  				/>
+  		</TableRow>  	
+  		
+  		<TableRow
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" 
+  			>
+  			<TextView 
+  				style="@style/m_textviewstyle" 
+  				android:text="详  址：" 
+  				/>
+  			<TextView 
+  				android:id="@+id/info_person_addr"
+  				style="@style/m_textviewstyle_r" 
+  				/>
+  		</TableRow>  	
+  		
+  		<TableRow
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" 
+  			>
+  			<TextView 
+  				style="@style/m_textviewstyle" 
+  				android:text="备  注：" 
+  				/>
+  			<TextView 
+  				android:id="@+id/info_person_remark"
+  				style="@style/m_textviewstyle_r" 
+  				android:singleLine="false"
+  				/>
+  		</TableRow>  				 				
+  		
+  		  		
+  			
+  	</TableLayout>	
+  	
+  </ScrollView>
+  
+	<RelativeLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical" 
+	android:gravity="bottom"
+	>	
+	
+		<RelativeLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="30dp" 		
+			android:orientation="horizontal" 
+			android:background="@drawable/bar_bg" 
+			android:layout_gravity="bottom" 
+			android:gravity="center_vertical" 
+			android:paddingTop="2dp"
+			>
+											
+		</RelativeLayout>
+	
+	</RelativeLayout>   
+</LinearLayout>

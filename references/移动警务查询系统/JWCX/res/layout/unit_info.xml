@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="280dp"
+  android:layout_height="wrap_content" 
+  android:orientation="vertical" 
+  android:gravity="center_vertical|center_horizontal">
+  
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="40dp" 
+		android:orientation="horizontal" 
+		android:background="@drawable/title_bg" 
+		android:gravity="center"
+		>
+		
+		<ImageView
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:src="@drawable/police" 
+			android:paddingTop="4dp"
+			android:maxWidth="38dp" 
+			android:maxHeight="38dp"
+			/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="受害单位详细信息" 
+			android:textSize="16sp" 
+			/>
+			
+	</LinearLayout>  
+  
+  <ScrollView
+  	android:layout_width="fill_parent" 
+  	android:layout_height="wrap_content" 
+  	>
+  	
+  	<TableLayout
+  		android:layout_width="fill_parent" 
+  		android:layout_height="wrap_content" 
+  		android:padding="20dp"
+  		>
+  		
+  		<TableRow
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" 
+  			>
+  			<TextView 
+  				style="@style/m_textviewstyle" 
+  				android:text="名  称：" 
+  				/>
+  			<TextView 
+  				android:id="@+id/unit_name"
+  				style="@style/m_textviewstyle_r" 
+  				/>
+  		</TableRow>
+  					 				
+  		<TableRow
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" 
+  			>
+  			<TextView 
+  				style="@style/m_textviewstyle" 
+  				android:text="类  型：" 
+  				/>
+  			<TextView 
+  				android:id="@+id/unit_category"
+  				style="@style/m_textviewstyle_r" 
+  				/>
+  		</TableRow>
+  		
+  		<TableRow
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" 
+  			>
+  			<TextView 
+  				style="@style/m_textviewstyle" 
+  				android:text="拥有者：" 
+  				/>
+  			<TextView 
+  				android:id="@+id/unit_owner"
+  				style="@style/m_textviewstyle_r" 
+  				/>
+  		</TableRow>  
+  		
+  		<TableRow
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" 
+  			>
+  			<TextView 
+  				style="@style/m_textviewstyle" 
+  				android:text="电  话：" 
+  				/>
+  			<TextView 
+  				android:id="@+id/unit_phone"
+  				style="@style/m_textviewstyle_r" 
+  				/>
+  		</TableRow>
+  		
+  		<TableRow
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" 
+  			>
+  			<TextView 
+  				style="@style/m_textviewstyle" 
+  				android:text="邮  箱：" 
+  				/>
+  			<TextView 
+  				android:id="@+id/unit_email"
+  				style="@style/m_textviewstyle_r" 
+  				/>
+  		</TableRow>  		  				  		
+  		  		
+  			
+  	</TableLayout>	
+  	
+  </ScrollView>
+  
+	<RelativeLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical" 
+	android:gravity="bottom"
+	>	
+	
+		<RelativeLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="30dp" 		
+			android:orientation="horizontal" 
+			android:background="@drawable/bar_bg" 
+			android:layout_gravity="bottom" 
+			android:gravity="center_vertical" 
+			android:paddingTop="2dp"
+			>
+											
+		</RelativeLayout>
+	
+	</RelativeLayout>   
+</LinearLayout>

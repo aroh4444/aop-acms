@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@color/bg" 
+  android:orientation="vertical"
+  >
+  
+  	
+	<!-- 这里是title栏 -->
+	
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="45dp" 
+		android:orientation="horizontal" 
+		android:background="@drawable/title_bg" 
+		android:gravity="center"
+		>
+		
+		<ImageView
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:src="@drawable/police" 
+			android:paddingTop="4dp"
+			android:maxWidth="38dp" 
+			android:maxHeight="38dp"
+			/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="位置信息查询" 
+			android:textSize="16sp" 
+			/>
+			
+	</LinearLayout>
+	<cn.creable.gridgis.controls.MapView
+		android:id="@+id/mapView" android:layout_width="fill_parent"
+		android:layout_height="340dp" />
+		
+	<!-- 这里是title栏 -->
+	<RelativeLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical" 
+	android:gravity="bottom"
+	>	
+	
+		<RelativeLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="45dp" 		
+			android:orientation="horizontal" 
+			android:background="@drawable/bar_bg" 
+			android:layout_gravity="bottom" 
+			android:gravity="center_vertical" 
+			android:paddingTop="2dp"
+			>
+
+			<LinearLayout
+				android:id="@+id/back"
+				android:layout_width="40dp" 
+				android:layout_height="fill_parent" 
+				android:background="@drawable/menu_bg"
+				android:orientation="vertical" 
+				android:layout_marginLeft="15dp" 
+				android:clickable="true" 
+				android:onClick="onClick"
+				>
+				<ImageView 
+					android:layout_width="25dp" 
+					android:layout_height="20dp" 
+					android:src="@drawable/menu_return" 
+					android:layout_gravity="center_horizontal"
+					/>
+				<TextView
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal" 
+					android:text="返回"
+					/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:id="@+id/push"
+				android:layout_width="40dp" 
+				android:layout_height="fill_parent" 
+				android:background="@drawable/menu_bg"
+				android:orientation="vertical" 
+				android:layout_marginLeft="10dp" 
+				android:layout_toRightOf="@+id/back"
+				android:clickable="true" 
+				android:onClick="onClick"
+				>
+				<ImageView 
+					android:layout_width="25dp" 
+					android:layout_height="20dp" 
+					android:src="@drawable/push" 
+					android:layout_gravity="center_horizontal"
+					/>
+				<TextView
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal" 
+					android:text="载入"
+					/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:id="@+id/bigger"
+				android:layout_width="40dp" 
+				android:layout_height="fill_parent" 
+				android:background="@drawable/menu_bg"
+				android:orientation="vertical" 
+				android:layout_marginLeft="10dp" 
+				android:layout_toRightOf="@+id/push"
+				android:clickable="true" 
+				android:onClick="onClick"
+				>
+				<ImageView 
+					android:layout_width="25dp" 
+					android:layout_height="20dp" 
+					android:src="@drawable/bigger" 
+					android:layout_gravity="center_horizontal"
+					/>
+				<TextView
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal" 
+					android:text="放大"
+					/>
+			</LinearLayout>	
+			
+			<LinearLayout
+				android:id="@+id/smaller"
+				android:layout_width="40dp" 
+				android:layout_height="fill_parent" 
+				android:background="@drawable/menu_bg"
+				android:orientation="vertical" 
+				android:layout_marginLeft="10dp" 
+				android:layout_toRightOf="@+id/bigger"
+				android:clickable="true" 
+				android:onClick="onClick"
+				>
+				<ImageView 
+					android:layout_width="25dp" 
+					android:layout_height="20dp" 
+					android:src="@drawable/smaller" 
+					android:layout_gravity="center_horizontal"
+					/>
+				<TextView
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal" 
+					android:text="缩小"
+					/>
+			</LinearLayout>	
+			
+			<LinearLayout
+				android:id="@+id/move"
+				android:layout_width="40dp" 
+				android:layout_height="fill_parent" 
+				android:background="@drawable/menu_bg"
+				android:orientation="vertical" 
+				android:layout_marginLeft="10dp" 
+				android:layout_toRightOf="@+id/smaller"
+				android:clickable="true" 
+				android:onClick="onClick"
+				>
+				<ImageView 
+					android:layout_width="25dp" 
+					android:layout_height="20dp" 
+					android:src="@drawable/move" 
+					android:layout_gravity="center_horizontal"
+					/>
+				<TextView
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal" 
+					android:text="平移"
+					/>
+			</LinearLayout>										
+			
+			<LinearLayout
+				android:id="@+id/other"
+				android:layout_width="40dp" 
+				android:layout_height="fill_parent" 
+				android:background="@drawable/menu_bg"
+				android:orientation="vertical" 
+				android:layout_alignParentRight="true" 
+				android:layout_marginRight="10dp" 
+				android:layout_toRightOf="@+id/move"
+				android:clickable="true" 
+				android:onClick="onClick"				
+				>
+				<ImageView 
+					android:layout_width="25dp" 
+					android:layout_height="20dp"  
+					android:src="@drawable/more" 
+					android:layout_gravity="center_horizontal"
+					/>
+				<TextView
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal" 
+					android:text="更多"
+					/>
+			</LinearLayout>			
+				
+		</RelativeLayout>
+	
+	</RelativeLayout> 			
+	
+			
+</LinearLayout>
