@@ -1,0 +1,1 @@
+Android Ordering Food System support to user automatic ordering food and manage their food.
